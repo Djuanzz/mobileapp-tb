@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maincolor"
+    tools:context=".MainActivity2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dashboard_pasien"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollviewparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        app:layout_constraintBottom_toTopOf="@id/fragment_container">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="25dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView5"
+                android:layout_width="407dp"
+                android:layout_height="140dp"
+                android:contentDescription="Scrollable horizontal content"
+                android:scrollbars="none"
+                tools:layout_editor_absoluteY="43dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+<!--                    <Image-->
+<!--                        android:id="@+id/imageView17"-->
+<!--                        android:layout_width="260dp"-->
+<!--                        android:layout_height="120dp"-->
+<!--                        android:layout_marginStart="8dp"-->
+<!--                        android:layout_marginEnd="12dp"-->
+<!--                        android:background="@null"-->
+<!--                        android:padding="0dp"-->
+<!--                        android:src="@drawable/reminder" />-->
+
+                    <ImageButton
+                        android:id="@+id/reminderbtn1"
+                        android:layout_width="260dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@null"
+                        android:contentDescription="Button description"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/reminder" />
+
+                    <ImageButton
+                        android:id="@+id/reminderbtn2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@null"
+                        android:padding="0dp"
+                        android:src="@drawable/calendarrr" />
+
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="1337dp" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscrollviewDB"
+                android:layout_width="407dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="0dp"
+                android:contentDescription="Scrollable horizontal content"
+                app:layout_constraintTop_toBottomOf="@id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/takequizbtn1"
+                        android:layout_width="260dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@null"
+                        android:padding="0dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/takequiz" />
+
+                    <ImageButton
+                        android:id="@+id/takequizbtn2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@null"
+                        android:padding="0dp"
+                        android:src="@drawable/lampp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="600dp" />
+
+<!--                        <ImageButton-->
+<!--                android:id="@+id/imgbuttonlainnyaDB"-->
+<!--                android:layout_width="96dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@null"-->
+<!--                android:contentDescription="See more options"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/btn_lainnya"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/horizontalscrollviewDB" />-->
+
+            <TextView
+                android:id="@+id/artikelhariini"
+                android:layout_width="164dp"
+                android:layout_height="17dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Artikel Hari ini"
+                android:textColor="#000000"
+                android:textSize="40px"
+                app:layout_constraintBottom_toTopOf="@+id/horizontalscrollviewDB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.064"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline13"
+                app:layout_constraintVertical_bias="0.754" />
+
+
+            <ImageView
+                android:id="@+id/curartikel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline12"
+                app:srcCompat="@drawable/curartikel1" />
+
+            <ImageView
+                android:id="@+id/curartikel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline12"
+                app:srcCompat="@drawable/curartikel2" />
+
+            <ImageView
+                android:id="@+id/curartikel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="600dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline12"
+                app:srcCompat="@drawable/curartikel3" />
+
+            <ImageView
+                android:id="@+id/curartikel4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="800dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline12"
+                app:srcCompat="@drawable/curartikel4" />
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView5"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="472dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/guideline12"-->
+<!--                app:srcCompat="@drawable/gambar_artikel_2" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/imageButton2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="676dp"-->
+<!--                android:background="@null"-->
+<!--                android:contentDescription="See more options"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/guideline12"-->
+<!--                app:srcCompat="@drawable/gambar_artikel_4" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

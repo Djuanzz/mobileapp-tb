@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/img_btn_home"
+        android:title="Beranda" />
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/img_btn_chat"
+        android:title="Chat" />
+    <item
+        android:id="@+id/nav_emr"
+        android:icon="@drawable/img_btn_emr"
+        android:title="Info Pasien" />
+    <item
+        android:id="@+id/nav_map"
+        android:icon="@drawable/img_btn_map"
+        android:title="Peta" />
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/img_acc_btn"
+        android:title="Akun" />
+</menu>
