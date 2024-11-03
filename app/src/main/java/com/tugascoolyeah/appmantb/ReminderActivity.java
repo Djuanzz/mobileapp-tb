@@ -24,7 +24,7 @@ import java.util.Locale;
 public class ReminderActivity extends AppCompatActivity {
 
     private ImageButton backhome;
-
+    private TextView keluhan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +34,12 @@ public class ReminderActivity extends AppCompatActivity {
         backhome = findViewById(R.id.backhome);
         backhome.setOnClickListener(v -> {
             Intent intent = new Intent(ReminderActivity.this, MainActivity2.class);
+            startActivity(intent);
+        });
+
+        keluhan = findViewById(R.id.keluhan_link);
+        keluhan.setOnClickListener(v -> {
+            Intent intent = new Intent(ReminderActivity.this, KeluhanActivity.class);
             startActivity(intent);
         });
 

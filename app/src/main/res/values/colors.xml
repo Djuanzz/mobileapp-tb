@@ -5,4 +5,7 @@
     <color name="quizcolor">#EFB5B5</color>
     <color name="quizsprimer">#BD8686</color>
     <color name="maincolor">#F6EAEA</color>
+    <color name="secondcolor">#EFB5B5</color>
+    <color name="btncolor">#ED7272</color>
+    <color name="selected">#62BF60</color>
 </resources>
